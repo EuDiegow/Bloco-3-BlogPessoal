@@ -1,0 +1,32 @@
+form{
+    text-transform: capitalize;
+    color: white;
+        
+    text-align: center;
+    font-size: 1.3em;
+}
+
+
+form button{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    background: rgb(85, 0, 255);
+    border-radius: 10px;
+    color: rgb(200, 255, 0);
+    height: 2em;
+    width: 10%;
+    font-size: 18px;
+}
+
+
+input {
+    display: inline;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 15%;
+}
+
+label{
+    margin-left: 2%;
+}

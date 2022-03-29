@@ -1,0 +1,19 @@
+article{
+    background:radial-gradient(darkmagenta,white);
+}
+
+section{
+    font-size: 10px;
+    margin-top: 2%;
+}
+
+img{
+width: 15em;
+border-radius: 20em;
+}
+
+
+
+.fa-github-square:hover{
+    color: black;
+}

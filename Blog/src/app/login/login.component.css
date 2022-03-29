@@ -1,0 +1,29 @@
+article{
+background: url("https://st4.depositphotos.com/15504030/i/600/depositphotos_403776404-stock-photo-powder-explosion-closeup-purple-dust.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+form{
+    text-transform: capitalize;
+    color: rgb(37, 1, 37);
+    
+    text-align: center;
+    font-size: 1.3em;
+}
+
+
+fieldset {
+    border-radius: 20px;
+    margin-top: 2%;
+
+}
+
+input {
+    display: block;
+    margin: auto;
+    height: 3em;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
