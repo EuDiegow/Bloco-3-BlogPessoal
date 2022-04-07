@@ -29,6 +29,10 @@ export class AuthService {
     return this.http.post<User>('http://localhost:8080/usuarios/cadastrar', user)
   }
 
+  getByIdUser(id: number): Observable<User>{
+    return this.http.get<User>(`http://localhost:8080/usuarios/${id}`)
+}
+
   logado(){
     let ok : Boolean = false
     
@@ -37,6 +41,10 @@ export class AuthService {
     }    
     return ok
 
+  }
+
+  atualizar(user: User):Observable<User>{
+    return this.http.put<User>('http://localhost:8080/usuarios/atualizar', user)
   }
 
 }
