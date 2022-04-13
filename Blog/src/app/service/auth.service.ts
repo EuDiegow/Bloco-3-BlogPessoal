@@ -22,15 +22,15 @@ export class AuthService {
 //verifica endpoints
 
   entrar(userLogin:UserLogin): Observable<UserLogin>{ //referencia model usuario
-    return this.http.post<UserLogin>('http://localhost:8080/usuarios/logar',userLogin) 
+    return this.http.post<UserLogin>('https://blogpessoaldiego.herokuapp.com/usuarios/logar',userLogin) 
 //usuario // referenciando a model |||  usuario minusculo   referencia a variavel criada 
   }
   cadastrar(user: User):Observable<User>{
-    return this.http.post<User>('http://localhost:8080/usuarios/cadastrar', user)
+    return this.http.post<User>('https://blogpessoaldiego.herokuapp.com/usuarios/cadastrar', user)
   }
 
   getByIdUser(id: number): Observable<User>{
-    return this.http.get<User>(`http://localhost:8080/usuarios/${id}`)
+    return this.http.get<User>(`https://blogpessoaldiego.herokuapp.com/${id}`)
 }
 
   logado(){
@@ -44,7 +44,7 @@ export class AuthService {
   }
 
   atualizar(user: User):Observable<User>{
-    return this.http.put<User>('http://localhost:8080/usuarios/atualizar', user)
+    return this.http.put<User>('https://blogpessoaldiego.herokuapp.com/usuarios/atualizar', user)
   }
 
 }
